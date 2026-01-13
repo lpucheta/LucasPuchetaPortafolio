@@ -1,0 +1,131 @@
+.seccion{
+    display: flex;
+    width: 100%;
+    padding: 6rem 2rem;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+
+.titulo{
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.headerTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.parrafo{
+    font-size: 1.1rem; /* 17–18px */
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+.imagen{
+    max-width: 100%;
+    width: 650px;
+    height: auto;
+}
+
+
+.contenedorBotones{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.botonProyectos{
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+    padding: 0.75rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 999px; /* pill */
+    cursor: pointer;
+    transition: 
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+
+
+.botonProyectos:hover{
+    background: transparent;
+    color: var(--black);
+    transform: translateY(-1px);
+}
+
+.botonContacto {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+  padding: 0.75rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.botonContacto:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+
+.contenedorRedes{
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+
+.redes{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.enlaceRedes{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .seccion {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .contenedorBotones{
+    flex-direction: column;
+  }
+
+  .imagen {
+    display: none;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .redes{
+    justify-content: center;
+  }
+
+}

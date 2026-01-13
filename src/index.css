@@ -1,0 +1,15 @@
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #FFFFFF;        /* fondo principal */
+  --off-white: #F7F7F7;    /* secciones / cards */
+  --black: #0F0F0F;        /* texto principal */
+  --white: #FFFFFF;        /* texto en fondos oscuros */
+  --soft-black: #1A1A1A;   /* títulos */
+  --color-hover: #3B3B3B;
+
+  --color-accent: #3B3B3B;  /* botones y enlaces */
+  --color-border: #000000;
+}
+

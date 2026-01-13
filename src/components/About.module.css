@@ -1,0 +1,88 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 100px;
+}
+
+.textoContainer{
+    max-width: 800px;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+
+.listaContainer{
+    display: flex;
+}
+
+.lista{
+    list-style-type: none;
+    padding: 2rem;
+    font-size: 3rem;
+    
+}
+
+
+/* Colores de Tecnologías */
+
+.iconReact {
+  color: #61dafb;
+}
+
+.iconCss {
+  color: #1572b6;
+}
+
+.iconJs {
+  color: #f7df1e;
+}
+
+.iconHtml {
+  color: #e34f26;
+}
+
+.iconGit {
+  color: #f05032;
+}
+
+.iconGitHub {
+  color: #2b3137;
+}
+
+.iconNode {
+  color: #339933;
+}
+
+.iconTailwind {
+  color: #06b6d4;
+}
+
+.iconMysql {
+  color: #4479a1;
+}
+
+.iconPostgresql {
+  color: #4169e1;
+}
+
+.iconSqlite {
+  color: #003b57;
+}
+
+
+
+@media (max-width: 768px){
+    .listaContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}

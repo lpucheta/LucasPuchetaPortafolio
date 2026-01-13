@@ -1,0 +1,20 @@
+/* App.module.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el sitio ocupe toda la altura de la pantalla */
+}
+
+.mainContent {
+  flex: 1; /* Esto hace que el contenido principal crezca y empuje al footer hacia abajo */
+}

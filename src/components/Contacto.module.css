@@ -1,0 +1,131 @@
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.group input, 
+.group textarea {
+  padding: 12px 0; /* Solo padding vertical  */
+  border: none;
+  border-bottom: 1px solid #e0e0e0; /* Línea sutil abajo */
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: transparent;
+}
+
+.group input:focus, 
+.group textarea:focus {
+  border-bottom: 1px solid #1a1a1a; /* Se oscurece al escribir */
+}
+
+.button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  align-self: flex-start; /* No ocupa todo el ancho */
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+.textarea {
+  resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    margin: 40px auto; 
+    text-align: center; 
+  }
+
+  .group label {
+    text-align: left; 
+  }
+
+  .group input, 
+  .group textarea {
+    font-size: 16px; /* Evita que iOS haga zoom automático al enfocar */
+  }
+
+  .button {
+    align-self: stretch; /* El botón ocupa todo el ancho */
+    margin-top: 10px;
+  }
+}
+
+
+
+.buttonSuccess {
+  background-color: #28a745 !important; 
+  color: white !important;
+  cursor: default !important;
+  transform: scale(1.02); 
+}
+
+/*  texto de agradecimiento debajo del botón */
+.thanks {
+  color: #28a745;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in; /* Aparece suavemente */
+}
+
+/*  errores de validación */
+[role="alert"] {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Animación  */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,137 @@
+/* ===== NAV CONTAINER ===== */
+.navContainer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    z-index: 99999999;
+}
+
+/* ===== IZQUIERDA (LOGO) ===== */
+.izqContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+}
+
+.izqContainer h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.enlace{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== BOTÓN HAMBURGUESA ===== */
+.botonMenu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--black);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ===== CONTENEDOR DEL MENÚ ===== */
+.menuContainer {
+    display: flex;
+}
+
+/* ===== LISTA DESKTOP ===== */
+.listaNavegacion {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.linkNavegacion {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.linkNavegacion:hover {
+    color: var(--color-hover);
+}
+
+/* ===== BOTÓN CERRAR ===== */
+.botonCerrar {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--black);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* Mostrar menu */
+    .botonMenu {
+        display: block;
+    }
+
+    /* Panel deslizable */
+    .menuContainer {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--off-white);
+
+        flex-direction: column;
+        align-items: center;
+
+        transition: left 0.5s ease;
+    }
+
+    /* Menú abierto */
+    .menuContainer.active {
+        left: 0;
+    }
+
+    /* Botón cerrar */
+    .botonCerrar {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+    }
+
+    /* Lista vertical */
+    .listaNavegacion {
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 80px;
+    }
+
+    .linkNavegacion {
+        font-size: 20px;
+    }
+
+    .linkNavegacion:hover {
+        background: none;
+        color: var(--color-hover);
+    }
+}
