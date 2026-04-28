@@ -2,6 +2,7 @@ import styles from './Proyectos.module.css'
 import CardProyectos from './CardProyectos'
 import img1 from '../assets/img-proyectos/img-ejemplo.png'
 import imgDesarrollo from '../assets/img-proyectos/endesarrollo.jpg'
+import pokedex from '../assets/img-proyectos/pokedex-imagen.png'
 
 
 function Proyectos() {
@@ -17,11 +18,11 @@ function Proyectos() {
         },
         {
             id: 2,
-            nombre: 'Proyecto en Desarrollo',
-            descripcion: 'Proximo proyecto en desarrollo.',
-            imagen: imgDesarrollo,
-            tecnologias: ['React', 'CSS'],
-            link: '#'
+            nombre: 'Pokedex',
+            descripcion: 'Aplicación web desarrollada con React que consume la PokéAPI. Permite explorar los primeros 20 pokémons, buscarlos por nombre en tiempo real y ver el detalle de cada uno con sus stats, tipos, altura y peso. Conceptos aplicados: Componentes, props, useState, useEffect, fetch a APIs externas, useParams, navegación con Link y renderizado condicional',
+            imagen: pokedex,
+            tecnologias: ['HTML', 'React', 'CSS'],
+            link: 'https://pokedex-iota-ten-84.vercel.app/'
         },
         {
             id: 3,
